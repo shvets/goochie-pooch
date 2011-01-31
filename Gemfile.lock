@@ -1,0 +1,56 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    BlueCloth (1.0.1)
+    adsf (1.0.1)
+      rack (>= 1.0.0)
+    api_cache (0.2.0)
+    coderay (0.9.7)
+    compass (0.10.6)
+      haml (>= 3.0.4)
+    crack (0.1.8)
+    cri (1.0.1)
+    diff-lcs (1.1.2)
+    haml (3.0.25)
+    httparty (0.7.3)
+      crack (= 0.1.8)
+    json (1.5.1)
+    kramdown (0.13.1)
+    mechanize (1.0.0)
+      nokogiri (>= 1.2.1)
+    mime-types (1.16)
+    nanoc3 (3.1.6)
+      cri (>= 1.0.0)
+    nokogiri (1.4.4)
+    octopi (0.4.0)
+      api_cache
+      httparty (>= 0.4.5)
+      mechanize (>= 0.9.3)
+      nokogiri (>= 1.3.1)
+    rack (1.2.1)
+    rspec (2.4.0)
+      rspec-core (~> 2.4.0)
+      rspec-expectations (~> 2.4.0)
+      rspec-mocks (~> 2.4.0)
+    rspec-core (2.4.0)
+    rspec-expectations (2.4.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.4.0)
+    watchr (0.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  BlueCloth
+  adsf
+  coderay
+  compass
+  haml
+  json
+  kramdown
+  mime-types
+  nanoc3
+  octopi
+  rspec
+  watchr

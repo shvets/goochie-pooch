@@ -1,0 +1,11 @@
+- menu = "directions"
+- link1 = "http://maps.google.com/maps?f=q&amp;source=s_q&amp;gl=us&amp;g=1011+Highway+70,+Brielle,+NJ+08730-1149&amp;q=grooming+salon+goochie+pooch&amp;ie=UTF8&amp;ll=40.428122,-74.383203&amp;spn=0.006811,0.018969&amp;z=14&amp;iwloc=A&amp;cid=4584045155681571376&amp;output=embed"
+- link2 = "http://maps.google.com/maps?f=q&amp;source=embed&amp;gl=us&amp;g=1011+Highway+70,+Brielle,+NJ+08730-1149&amp;q=grooming+salon+goochie+pooch&amp;ie=UTF8&amp;ll=40.428122,-74.383203&amp;spn=0.006811,0.018969&amp;z=14&amp;iwloc=A&amp;cid=4584045155681571376"
+
+%h1 Directions
+
+%iframe{:width => "425", :height => "350", :frameborder => "0", :scrolling => "no", :marginheight => "0", :marginwidth => "0", :src => "#{link1}"}
+%br/
+
+%small
+  %a{:href => "#{link2}", :style => "color:#0000FF;text-align:left"}View Larger Map
