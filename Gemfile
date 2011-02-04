@@ -5,9 +5,7 @@ gem "nanoc3"
 gem "haml"
 gem "kramdown"
 gem "mime-types"
-gem "json"
-gem "coderay"
-gem "BlueCloth"
+gem "imagesize"
 
 group "development" do
   gem "adsf"

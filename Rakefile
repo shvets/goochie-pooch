@@ -5,8 +5,14 @@ task :clean do
 end
 
 task :compile do
-  `mkdir site/public/javascripts`
+  `mkdir -p site/public/javascripts`
+  `mkdir -p site/public/images/slideshow`
+  `mkdir -p site/public/css`
+
   `cp static/javascripts/* site/public/javascripts`
+  `cp -R static/imageflow/imageflow.js site/public/javascripts`
+  `cp -R static/imageflow/imageflow.css site/public/css`
+  `cp -R static/images/* site/public/images`
   `nanoc3 compile`
 end
 

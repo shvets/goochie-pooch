@@ -7,3 +7,13 @@ include Nanoc3::Helpers::Rendering
 def menu_style value
   {:class => @item[:menu] == value ? "current_page_item" : ""}
 end
+
+require "rubygems" # you use rubygems
+require "image_size"
+require "open-uri"
+
+def imagesize file_name
+  open(file_name, "rb") do |f|
+    ImageSize.new(f.read).get_size
+  end
+end

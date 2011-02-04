@@ -17,6 +17,15 @@ watch( 'content/(.*)/(.*)' ) do |m|
   compile
 end
 
+watch( 'layouts/(.*)' ) do |m|
+  p "Modified file: #{m[0]}"
+  compile
+end
+watch( 'layouts/(.*)/(.*)' ) do |m|
+  p "Modified file: #{m[0]}"
+  compile
+end
+
 #watch( 'data/github_projects.txt' ) do |m|
 #  `touch content/index.haml`
 #  p "Modified file: #{m[0]}"

@@ -34,39 +34,17 @@ end
 compile '/static/*' do
 end
 
-compile '/md/*' do
-  filter :kramdown
-  layout 'default'
-end
-
-#compile '/haml/*' do
-#  filter :haml
-#  layout 'default'
-#end
-
-#compile '*' do
-#  filter :erb
-#  layout 'default'
-#end
-
 compile '/*' do
   filter :haml
   layout 'default'
 end
 
-#compile '/blog/*/' do
-#  filter :haml
-#  layout 'default'
+compile '/photos/*/' do
+  filter :haml
+  layout 'default'
 
-#  item.identifier + 'index.html'
-#end
-
-#compile '/bookmarks/*' do
-#  filter :haml
-#  layout 'default'
-
-#  item.identifier + 'index.html'
-#end
+  item.identifier + 'index.html'
+end
 
 #compile '/*' do
 #  filter :haml
