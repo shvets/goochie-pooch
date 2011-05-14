@@ -6,6 +6,7 @@ gem "haml"
 gem "kramdown"
 gem "mime-types"
 gem "imagesize"
+gem "rack"
 
 group "development" do
   gem "adsf"
