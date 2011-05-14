@@ -35,5 +35,6 @@ DEPENDENCIES
   kramdown
   mime-types
   nanoc3
+  rack
   rspec
   watchr
