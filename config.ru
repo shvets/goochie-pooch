@@ -34,9 +34,9 @@ use Rack::TryStatic,
     :urls => %w[/],                                 # match all requests 
     :try => ['.html', 'index.html', '/index.html']  # try these postfixes sequentially
 
-errorFile='site/Scratch/en/error/404-not_found/index.html'
-run lambda { [404, {
-                "Last-Modified"  => File.mtime(errorFile).httpdate,
-                "Content-Type"   => "text/html",
-                "Content-Length" => File.size(errorFile).to_s
-            }, File.read(errorFile)] }
+# errorFile='site/Scratch/en/error/404-not_found/index.html'
+# run lambda { [404, {
+#                 "Last-Modified"  => File.mtime(errorFile).httpdate,
+#                 "Content-Type"   => "text/html",
+#                 "Content-Length" => File.size(errorFile).to_s
+#             }, File.read(errorFile)] }
