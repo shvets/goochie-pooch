@@ -2,7 +2,7 @@ require 'rack'
 
 use Rack::Static, 
   :urls => ["/stylesheets", "/images"],
-  :root => "site/public"
+  :root => "public"
 
 run lambda { |env|
   [
