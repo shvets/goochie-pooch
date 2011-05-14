@@ -1,0 +1,192 @@
+/*
+-----------------------------------------------
+Nice Web Type likes Graublau Sans with Lucida sanserif
+Author:	Tim Brown
+Date:	21 May 2009
+
+Revisions:
+
+2 Nov 2009
+	Updated @font-face syntax as per http://nicewebtype.com/x/u
+-----------------------------------------------*/
+
+
+/* Typefaces
+-----------------------------------------------*/
+@font-face {
+	font-family: "Graublau Web Regular";
+	src: url("type/GraublauWeb.eot");
+	src: local("Graublau Web Regular"), local("GraublauWeb-Regular"),
+		url("type/GraublauWeb.woff") format("woff"),
+		url("type/GraublauWeb.otf") format("opentype"),
+		url("type/GraublauWeb.svg#GraublauWeb-Regular") format("svg");
+	}
+@font-face {
+	font-family: "Graublau Web Bold";
+	src: url("type/GraublauWebBold.eot");
+	src: local("Graublau Web Bold"), local("GraublauWeb-Bold"),
+		url("type/GraublauWebBold.woff") format("woff"),
+		url("type/GraublauWebBold.otf") format("opentype"),
+		url("type/GraublauWebBold.svg#GraublauWeb-Bold") format("svg");
+	}
+
+
+/* General
+===============================================*/
+body {
+	margin-top: 0px;
+	background: #fff url(../images/steel.png) top left repeat-x;
+	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+	}
+
+/* Links
+-----------------------------------------------*/
+a { text-decoration: none; }
+a:link,
+a:visited { color: #c33; }
+a:hover { color: #600; }
+a:active { color: #fff; background-color: #000; }
+
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+	margin-bottom: 18px;
+	}
+h1 a {
+	display: block;
+	width: 134px;
+	height: 104px;
+	text-indent: -9999px;
+	background: transparent url(../images/watermark.png) top left no-repeat;
+	}
+h2 {
+	font-family: "Graublau Web Bold";
+	font-weight: normal;
+	font-size: 90px;
+	line-height: 90px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: -5px;
+	margin-bottom: 5px;
+	color: #111417;
+	text-shadow: -2px 3px 0 #ddd;
+	}
+h3	{
+	font-family: "Graublau Web Bold";
+	font-weight: normal;
+	font-size: 54px;
+	line-height: 63px;
+	color: #2b333b;
+	}
+h4	{
+	font-family: "Graublau Web Bold";
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 36px;
+	color: #2b333b;
+	}
+h5	{
+	font-family: "Graublau Web Regular";
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 18px;
+	color: #333;
+	}
+h5 b {
+	font-family: "Graublau Web Bold";
+	}
+ol { list-style: decimal; }
+ul { list-style: square; }
+
+blockquote {
+	margin: 16px 0;
+	padding: 9px 0;
+	border-top: 1px #eee solid;
+	border-bottom: 1px #eee solid;
+	}
+blockquote p {
+	margin: 0;
+	}
+code {
+	font-family: "Panic Sans", Monaco, monospace; 
+	}
+strong.highlight {
+	font-weight: normal;
+	background-color: #ffc;
+	}
+sup a {
+	position: relative;
+	top: -3px;
+	padding: 2px 4px;
+	font-size: 11px;
+	}
+sup a:hover {
+	background-color: #eee;
+	}
+
+	
+/* Examples
+-----------------------------------------------*/
+.g {
+	font-family: "Graublau Web Regular";
+	}
+b .g {
+	font-family: "Graublau Web Bold";
+	}
+.large {
+	font-size: 18px;
+	line-height: 24px;
+	}
+.deck {
+	color: #2b333b;
+	}
+.char-compare {
+	margin-bottom: 17px;
+	font-size: 72px;
+	line-height: 72px;
+	color: #999;
+	}
+.char-compare .g {
+	color: #666;
+	}
+
+/* Marginal notes
+-----------------------------------------------*/
+p#disclaimer {
+	margin: 0 0 36px;
+	padding: 9px 0;
+	border-bottom: 1px #ddd solid;
+	text-align: center;
+	color: #666;
+	}
+.aside h5 {
+	margin: 0;
+	border-bottom: 1px #ddd solid;
+	}
+.aside p,
+.aside ul {
+	margin: 0;
+	}
+
+/* Footer area
+-----------------------------------------------*/
+#supp {
+	margin: 18px 0;
+	padding: 17px 0;
+	border-top: 1px #ddd solid;
+	border-bottom: 1px #ddd solid;
+	}
+	
+
+/* Hooray!
+-----------------------------------------------
+
+It's the bottom of the CSS file!
+
+Congratulations on being so investigative and thorough. 
+Web design needs more folks like you. Please let me know 
+if you find anything awry in these files.
+
+http://nicewebtype.com/about
+
+Tim
+
+-----------------------------------------------*/
