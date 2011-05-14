@@ -7,6 +7,8 @@ gem "kramdown"
 gem "mime-types"
 gem "imagesize"
 gem "rack"
+gem "rack-contrib"
+gem "rack-rewrite"
 
 group "development" do
   gem "adsf"
