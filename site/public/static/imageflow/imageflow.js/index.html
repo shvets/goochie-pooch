@@ -106,7 +106,7 @@ function ImageFlow ()
     slider:             true,           /* Toggle slider */
     sliderCursor:       'e-resize',     /* Slider cursor type - default is 'default' */
     sliderWidth:        14,             /* Width of the slider in px */
-    slideshow:          true,          /* Toggle slideshow */
+    slideshow:          false,          /* Toggle slideshow */
     slideshowSpeed:     7000,           /* Time between slides in ms */
     slideshowAutoplay:  true,          /* Toggle automatic slideshow play on startup */
     startID:            1,              /* Image ID to begin with */

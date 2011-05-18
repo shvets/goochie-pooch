@@ -2,14 +2,15 @@
 - author = "Alexander Shvets"
 - menu = "home"
 
-%h1 Welcome
-%p
-  You can provide feedback for this website. Just send us
-  %a{:href => "mailto:goochie.pooch@gmail.com"} email
-%h1 Contact Info
-%p Address:
+-#slideshow
+  -#= render "common/slideshow"
+
+%h1{:style => "color:#B32D15;font-size:52px"} Welcome to our home page!
+
+%h1 Our Address:
+
 %blockquote
-  %p
+  %p#address
     Goochie Pooch & Cats Too
     %br/
     737 State Route 18
@@ -17,9 +18,22 @@
     East Brunswick, NJ 08816
     %br/
     U.S.A.
-%p
-  Tel: 732-432-9191
-  %br/
 
+%p#plain_text Please feel free to call us any time at 
+%h1{:style => "font-family:Reenie Beanie,arial;color:teal;font-size:80px"}= "732-432-9191 "
+%p#plain_text for Grooming Prices and scheduling an appointment.
 
+- link1 = "http://maps.google.com/maps?f=q&amp;source=s_q&amp;gl=us&amp;g=1011+Highway+70,+Brielle,+NJ+08730-1149&amp;q=grooming+salon+goochie+pooch&amp;ie=UTF8&amp;ll=40.428122,-74.383203&amp;spn=0.006811,0.018969&amp;z=14&amp;iwloc=A&amp;cid=4584045155681571376&amp;output=embed"
+- link2 = "http://maps.google.com/maps?f=q&amp;source=embed&amp;gl=us&amp;g=1011+Highway+70,+Brielle,+NJ+08730-1149&amp;q=grooming+salon+goochie+pooch&amp;ie=UTF8&amp;ll=40.428122,-74.383203&amp;spn=0.006811,0.018969&amp;z=14&amp;iwloc=A&amp;cid=4584045155681571376"
 
+%h1 Our Location
+
+%p#plain_text We are located on Route 18 South in between Racetrack Rd. and Ryders line, 500 sq. feet from East Brunswick Square Mall.
+
+%h1 Directions
+
+%iframe{:width => "425", :height => "350", :frameborder => "0", :scrolling => "no", :marginheight => "0", :marginwidth => "0", :src => "#{link1}"}
+%br/
+
+%small
+  %a{:href => "#{link2}", :style => "color:#0000FF;text-align:left"}View Larger Map
