@@ -1,0 +1,7 @@
+heroku create goochie-pooch
+heroku keys:add
+heroku addons:add custom_domains:basic
+
+heroku domains:add www.goochie-pooch.com
+heroku domains:add goochie-pooch.com
+
