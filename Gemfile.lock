@@ -5,11 +5,19 @@ GEM
       rack (>= 1.0.0)
     compass (0.10.6)
       haml (>= 3.0.4)
+    configuration (1.2.0)
     cri (1.0.1)
     diff-lcs (1.1.2)
     haml (3.0.25)
+    heroku (2.1.4)
+      launchy (>= 0.3.2)
+      rest-client (~> 1.6.1)
+      term-ansicolor (~> 1.0.5)
     imagesize (0.1.1)
     kramdown (0.13.1)
+    launchy (0.4.0)
+      configuration (>= 0.0.5)
+      rake (>= 0.8.1)
     mime-types (1.16)
     nanoc3 (3.1.6)
       cri (>= 1.0.0)
@@ -17,6 +25,9 @@ GEM
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
     rack-rewrite (1.0.2)
+    rake (0.8.7)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
     rspec (2.4.0)
       rspec-core (~> 2.4.0)
       rspec-expectations (~> 2.4.0)
@@ -25,6 +36,7 @@ GEM
     rspec-expectations (2.4.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.4.0)
+    term-ansicolor (1.0.5)
     watchr (0.7)
 
 PLATFORMS
@@ -34,6 +46,7 @@ DEPENDENCIES
   adsf
   compass
   haml
+  heroku
   imagesize
   kramdown
   mime-types
