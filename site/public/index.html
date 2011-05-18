@@ -47,6 +47,61 @@
 
 </div>
 <div id='page'>
+<div id='slideshow'>
+  <br />
+  <br />
+  <div class='image-slider'>
+    <div class='imageflow' id='photos_gallery'>
+      <img height='160' longdesc='/images/slideshow/DSC03215.JPG' src='/images/slideshow/DSC03215.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03218.JPG' src='/images/slideshow/DSC03218.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03226.JPG' src='/images/slideshow/DSC03226.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03262.JPG' src='/images/slideshow/DSC03262.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03264.JPG' src='/images/slideshow/DSC03264.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03265.JPG' src='/images/slideshow/DSC03265.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03278.JPG' src='/images/slideshow/DSC03278.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03282.JPG' src='/images/slideshow/DSC03282.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03295.JPG' src='/images/slideshow/DSC03295.JPG' width='213' />
+      <img height='213' longdesc='/images/slideshow/DSC03310.JPG' src='/images/slideshow/DSC03310.JPG' width='160' />
+      <img height='213' longdesc='/images/slideshow/DSC03315.JPG' src='/images/slideshow/DSC03315.JPG' width='160' />
+      <img height='213' longdesc='/images/slideshow/DSC03317.JPG' src='/images/slideshow/DSC03317.JPG' width='160' />
+      <img height='160' longdesc='/images/slideshow/DSC03338.JPG' src='/images/slideshow/DSC03338.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03344.JPG' src='/images/slideshow/DSC03344.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03394.JPG' src='/images/slideshow/DSC03394.JPG' width='213' />
+      <img height='160' longdesc='/images/slideshow/DSC03396.JPG' src='/images/slideshow/DSC03396.JPG' width='213' />
+    </div>
+  </div>
+  <script type='text/javascript'>
+    //<![CDATA[
+      jQuery(document).ready(function() {
+        //var slideshow = new ImageFlow();
+        //slideshow.init({ ImageFlowID: 'myImageFlow', slideshow: true, slideshowAutoplay: true });
+      
+        var slideshow = new ImageFlow();
+        slideshow.init({
+          animationSpeed:     40,
+          aspectRatio:        5.0,
+          buttons:            true,
+          captions:           false,
+          circular:           true,
+          imageCursor:        'pointer',
+          ImageFlowID:        'photos_gallery',
+          imageFocusM:        0.5,
+          imageFocusMax:      2,
+          imagesHeight:       0.7,
+          percentLandscape:   100.4,
+          reflections:        false,
+          reflectionP:        0.4,
+          slideshow:          true,
+          slideshowSpeed:     7000,
+          slideshowAutoplay:  true,
+          glideToStartID:     false,
+          startAnimation:     true,
+          xStep:              120
+        });
+      });
+    //]]>
+  </script>
+</div>
 <h1 style='color:#B32D15;font-size:52px'>Welcome to our home page!</h1>
 <h1>Our Address:</h1>
 <blockquote>

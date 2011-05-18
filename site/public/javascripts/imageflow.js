@@ -97,18 +97,18 @@ function ImageFlow ()
     percentLandscape:   100.4,            /* Scale landscape format */
     percentOther:       100,            /* Scale portrait and square format */
     preloadImages:      true,           /* Toggles loading bar (false: requires img attributes height and width) */
-    reflections:        false,           /* Toggle reflections */
+    reflections:        true,           /* Toggle reflections */
     reflectionGET:      '',             /* Pass variables via the GET method to the reflect_.php script */
     reflectionP:        0.4,            /* Height of the reflection in percent of the source image */
     reflectionPNG:      false,          /* Toggle reflect2.php or reflect3.php */
     reflectPath:        '',             /* Path to the reflect_.php script */
     scrollbarP:         0.6,            /* Width of the scrollbar in percent */
-    slider:             true,           /* Toggle slider */
+    slider:             false,           /* Toggle slider */
     sliderCursor:       'e-resize',     /* Slider cursor type - default is 'default' */
     sliderWidth:        14,             /* Width of the slider in px */
     slideshow:          false,          /* Toggle slideshow */
-    slideshowSpeed:     7000,           /* Time between slides in ms */
-    slideshowAutoplay:  true,          /* Toggle automatic slideshow play on startup */
+    slideshowSpeed:     0,           /* Time between slides in ms */
+    slideshowAutoplay:  false,          /* Toggle automatic slideshow play on startup */
     startID:            1,              /* Image ID to begin with */
     glideToStartID:     false,           /* Toggle glide animation to start ID */
     startAnimation:     true,          /* Animate images moving in from the right on startup */
