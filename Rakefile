@@ -17,7 +17,7 @@ task :compile do
 end
 
 task :view do
-  `nanoc3 view`
+  `nanoc3 view --port 3001`
 end
 
 task :watch do

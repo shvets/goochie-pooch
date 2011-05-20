@@ -1,5 +1,5 @@
 def compile
-  `rake compile`
+  puts `rake compile`
 end
 
 compile
@@ -9,35 +9,24 @@ view_thread = Thread.new do
 end
 
 watch( 'content/(.*)' ) do |m|
-  p "Modified file: #{m[0]}"
+  puts "Modified content file: #{m[0]}"
   compile
 end
-watch( 'content/(.*)/(.*)' ) do |m|
-  p "Modified file: #{m[0]}"
+
+watch( 'content/assets/style/(.*)' ) do |m|
+  puts "Modified asset file: #{m[0]}"
   compile
 end
 
 watch( 'layouts/(.*)' ) do |m|
-  p "Modified file: #{m[0]}"
-  compile
-end
-watch( 'layouts/(.*)/(.*)' ) do |m|
-  p "Modified file: #{m[0]}"
+  puts "Modified layout: #{m[0]}"
   compile
 end
 
-#watch( 'data/github_projects.txt' ) do |m|
-#  `touch content/index.haml`
-#  p "Modified file: #{m[0]}"
-#  compile
-#end
-#
-#watch( 'data/bookmarks.json' ) do |m|
-#  `touch content/bookmarks.haml`
-#  p "Modified file: #{m[0]}"
-#  compile
-#end
-
+watch( 'layouts/common/(.*)' ) do |m|
+  puts "Modified common file: #{m[0]}"
+  compile
+end
 
 # --------------------------------------------------
 # Signal Handling

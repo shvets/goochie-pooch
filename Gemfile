@@ -5,6 +5,7 @@ gem "rack-contrib"
 gem "rack-rewrite"
 
 group "development" do
+  gem "irbtools"
   gem "adsf"
   gem "watchr"
   gem "heroku"
@@ -16,6 +17,8 @@ group "development" do
 
   gem "mime-types"
   gem "imagesize"
+  gem 'coffee-script'
+  gem 'coffee-filter'
 end
 
 group "test" do

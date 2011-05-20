@@ -1,18 +1,10 @@
 #!/usr/bin/env ruby
 
-# A few helpful tips about the Rules file:
-#
-# * The order of rules is important: for each item, only the first matching
-#   rule is applied.
-#
-# * Item identifiers start and end with a slash (e.g. “/about/” for the file
-#   “content/about.html”). To select all children, grandchildren, … of an
-#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
-#   because “*” matches zero or more characters.
-
 require 'compass'
+Compass.add_project_configuration 'compass_config.rb'
 
-Compass.add_project_configuration('compass_config.rb')
+sass_options = Compass.sass_engine_options
+haml_options = { :format => :html5 }
 
 #compile '/stylesheet/' do
 #  # don’t filter or layout
@@ -34,6 +26,15 @@ end
 compile '/static/*' do
 end
 
+compile '/javascripts/*/' do
+  case item[:extension]
+    when 'coffee'
+      filter :coffee
+    when 'js'
+      # Nothing
+  end
+end
+
 compile '/*' do
   filter :haml
   layout 'default'
@@ -46,6 +47,16 @@ compile '/photos/*/' do
   item.identifier + 'index.html'
 end
 
+# Compile both coffee and js, co-mingled in the same directory
+#compile '/js/*' do
+#  case item[:extension]
+#    when 'coffee'
+#      filter :coffee
+#    when 'js'
+#      # Nothing
+#  end
+#end
+
 #compile '/*' do
 #  filter :haml
 #  layout 'default'
@@ -53,6 +64,10 @@ end
 
 route '/assets/style/*/' do
   item.identifier.chop + '.css' # so that the /assets/style/screen/ item is compiled to /assets/style/screen.css
+end
+
+route '/javascripts/*/' do
+  item.identifier.chop + '.js'
 end
 
 route '*' do
@@ -63,5 +78,5 @@ end
 
 layout '/default/', :haml, :format => :html5, :ugly => true
 
-layout '*', :haml
+layout '*', :haml, haml_options
 

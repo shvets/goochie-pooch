@@ -3,24 +3,68 @@ GEM
   specs:
     adsf (1.0.1)
       rack (>= 1.0.0)
+    alias (0.2.2)
+    awesome_print (0.4.0)
+    boson (0.3.3)
+      alias (>= 0.2.2)
+      hirb (>= 0.3.5)
+    clipboard (0.9.8)
+    coderay (0.9.8)
+    coffee-filter (0.1.0)
+      coffee-script (>= 2.2.0)
+      haml (>= 3.0.18)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.1.0)
     compass (0.10.6)
       haml (>= 3.0.4)
     configuration (1.2.0)
     cri (1.0.1)
     diff-lcs (1.1.2)
+    every_day_irb (1.0.1)
+    execjs (1.0.0)
+      multi_json (~> 1.0)
+    fancy_irb (0.6.5)
+      unicode-display_width (>= 0.1.1)
+      wirb (>= 0.2.4)
+    g (1.4.0)
+      ruby-growl (>= 1.0.1)
     haml (3.0.25)
     heroku (2.1.4)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
       term-ansicolor (~> 1.0.5)
+    hirb (0.4.5)
     imagesize (0.1.1)
+    interactive_editor (0.0.8)
+      spoon (>= 0.0.1)
+    irbtools (1.0.1)
+      awesome_print (~> 0.4.0)
+      boson (>= 0.3.3)
+      clipboard (>= 0.9.8)
+      coderay (~> 0.9)
+      every_day_irb (>= 1.0.1)
+      fancy_irb (>= 0.6.5)
+      g
+      hirb (~> 0.4.5)
+      interactive_editor (>= 0.0.8)
+      methodfinder (>= 1.2.3)
+      ori (~> 0.1.0)
+      rvm_loader (>= 1.0.0)
+      sketches
+      wirb (>= 0.2.6)
+      zucker (>= 10)
     kramdown (0.13.1)
     launchy (0.4.0)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
+    methodfinder (1.2.3)
     mime-types (1.16)
+    multi_json (1.0.2)
     nanoc3 (3.1.6)
       cri (>= 1.0.0)
+    ori (0.1.0)
     rack (1.2.1)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
@@ -36,18 +80,28 @@ GEM
     rspec-expectations (2.4.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.4.0)
+    ruby-growl (3.0)
+    rvm_loader (1.0.0)
+    sketches (0.1.1)
+    spoon (0.0.1)
     term-ansicolor (1.0.5)
+    unicode-display_width (0.1.1)
     watchr (0.7)
+    wirb (0.2.6)
+    zucker (10)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   adsf
+  coffee-filter
+  coffee-script
   compass
   haml
   heroku
   imagesize
+  irbtools
   kramdown
   mime-types
   nanoc3

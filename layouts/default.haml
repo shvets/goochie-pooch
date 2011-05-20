@@ -11,17 +11,20 @@
     %link{:href => "/css/imageflow.css", :rel => "stylesheet", :type => "text/css"}/
 
     %script{:src => "/javascripts/imageflow.js", :type => "text/javascript"}
-    %script{:src => "/javascripts/jquery-1.5.js", :type => "text/javascript"}
-  %body{:bgColor => 'E6E6FA'}
+    %script{:src => "/javascripts/jquery-1.6.1.js", :type => "text/javascript"}
+    %script{:src => '/javascripts/application.js', :type => 'text/javascript'}
+  %body
     #wrapper
       #main-column
         #logo
           = render "common/header"
-        #menu
-          = render "common/menu"
-        #page
-          = yield
-          #footer
-            = render "common/footer"
+
+        #main_content
+          #menu
+            = render "common/menu"
+          #page
+            = yield
+        #footer
+          = render "common/footer"
       -##sidebar
-      -#  = render "common/sidebar"
+      -# = render "common/sidebar"
