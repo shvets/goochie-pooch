@@ -1,3 +1,3 @@
-$(document).ready ->
-  $("ul li a").click ->
+jQuery(document).ready ->
+  jQuery("ul li a").click ->
     if this.id == 'home' then $("#slideshow").show() else $("#slideshow").hide()
