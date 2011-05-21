@@ -1,43 +1,56 @@
 #!/usr/bin/env ruby
 
 require 'compass'
+
 Compass.add_project_configuration 'compass_config.rb'
 
 sass_options = Compass.sass_engine_options
 haml_options = { :format => :html5 }
 
-#compile '/stylesheet/' do
-#  # don’t filter or layout
-#end
-#compile '/assets/style/*/' do
-#  filter :sass
-#end
+# compile rules
+
+compile '/layouts/*/' do
+  # don’t filter static files
+end
+
+compile '/static/*/' do
+  # don’t filter static files
+end
+
+compile '/images/*/' do
+  # don’t filter images
+end
+
+compile '/imageflow/*/' do
+  p ""
+  # don’t filter images
+end
+
+compile '/stylesheet/*' do
+  # don’t filter or layout
+end
 
 compile '/assets/style/_*/' do
-  # Don’t compile partials
+  # Don’t compile assets partials
 end
 
 compile '/assets/style/*/' do
-  filter :sass, Compass.sass_engine_options
+  filter :sass, sass_options
   filter :relativize_paths, :type => :css
-  #filter :rainpress
 end
 
-compile '/static/*' do
+compile '/assets/coffee/*/' do
+  filter :coffee
 end
 
-compile '/javascripts/*/' do
-  case item[:extension]
-    when 'coffee'
-      filter :coffee
-    when 'js'
-      # Nothing
+compile '/assets/javascript/*/' do
+end
+
+compile '*' do
+  if item[:extension] == 'haml'
+    filter :haml, haml_options
+    layout 'default'
   end
-end
-
-compile '/*' do
-  filter :haml
-  layout 'default'
 end
 
 compile '/photos/*/' do
@@ -47,34 +60,46 @@ compile '/photos/*/' do
   item.identifier + 'index.html'
 end
 
-# Compile both coffee and js, co-mingled in the same directory
-#compile '/js/*' do
-#  case item[:extension]
-#    when 'coffee'
-#      filter :coffee
-#    when 'js'
-#      # Nothing
-#  end
-#end
+# routes
 
-#compile '/*' do
-#  filter :haml
-#  layout 'default'
-#end
+route '/imageflow/*' do
+  if item[:extension] == 'css'
+    "/stylesheets/#{File.basename(item[:filename])}"
+  elsif item[:extension] == 'js'
+    "/javascripts/#{File.basename(item[:filename])}"
+  elsif item[:extension] == 'png'
+    "/" + item[:filename].sub('content/', '')
+  end
+end
+
+route '/images/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route '/stylesheets/*/' do
+  item.identifier.chop + '.css'
+end
 
 route '/assets/style/*/' do
   item.identifier.chop + '.css' # so that the /assets/style/screen/ item is compiled to /assets/style/screen.css
 end
 
-route '/javascripts/*/' do
-  item.identifier.chop + '.js'
+route '/assets/coffee/*/' do
+  #item.identifier.chop + '.js' # so that the /assets/style/screen/ item is compiled to /assets/style/screen.css
+  "/javascripts/#{File.basename(item[:filename])}".sub('coffee', 'js')
+end
+
+route '/assets/javascript/*/' do
+  #item.identifier.chop + '.js'
+  "/javascripts/#{File.basename(item[:filename])}"
 end
 
 route '*' do
   item.identifier + 'index.html'
 end
 
-### Layouting ################################################################
+
+# layouts
 
 layout '/default/', :haml, :format => :html5, :ugly => true
 

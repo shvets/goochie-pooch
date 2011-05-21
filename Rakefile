@@ -1,18 +1,14 @@
 require 'nanoc3/tasks'
 
 task :clean do
-  `rm -rf site/public/*` 
+  `rm -rf public/*`
 end
 
 task :compile do
-  `mkdir -p site/public/javascripts`
-  `mkdir -p site/public/images/slideshow`
-  `mkdir -p site/public/css`
+  `mkdir -p public/css`
 
-  `cp static/javascripts/* site/public/javascripts`
-  `cp -R static/imageflow/imageflow.js site/public/javascripts`
-  `cp -R static/imageflow/imageflow.css site/public/css`
-  `cp -R static/images/* site/public/images`
+  `cp -R static/imageflow/imageflow.js public/javascripts`
+  `cp -R static/imageflow/imageflow.css public/css`
   `nanoc3 compile`
 end
 
