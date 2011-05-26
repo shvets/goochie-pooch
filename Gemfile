@@ -9,7 +9,6 @@ group "development" do
   gem "adsf"
   gem "watchr"
   gem "heroku"
-  gem "gem-open"
 
   gem 'compass'
   gem "nanoc3"
