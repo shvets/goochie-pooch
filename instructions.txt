@@ -1,9 +1,0 @@
-heroku create goochie-pooch
-heroku keys:add
-heroku addons:add custom_domains:basic
-
-heroku domains:add www.goochie-pooch.com
-heroku domains:add goochie-pooch.com
-
-heroku create --stack bamboo-mri-1.9.2
-heroku stack:migrate bamboo-mri-1.9.2

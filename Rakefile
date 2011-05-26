@@ -24,3 +24,21 @@ end
 task :autocompile do
   `nanoc3 autocompile`
 end
+
+task :recreate do
+  puts exec(<<-SCRIPT
+    heroku destroy goochie-pooch
+    heroku create goochie-pooch
+    heroku keys:add
+    heroku addons:add custom_domains:basic
+
+    heroku domains:add www.goochie-pooch.com
+    heroku domains:add goochie-pooch.com
+  SCRIPT
+  )
+end
+
+task :migrate do
+  #heroku create --stack bamboo-mri-1.9.2
+  `heroku stack:migrate bamboo-mri-1.9.2`
+end
