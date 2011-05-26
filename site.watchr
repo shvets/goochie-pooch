@@ -13,17 +13,27 @@ watch( 'content/(.*)' ) do |m|
   compile
 end
 
+watch( 'content/assets/coffee/(.*)' ) do |m|
+  puts "Modified coffeescript file: #{m[0]}"
+  compile
+end
+
+watch( 'content/assets/javascript/(.*)' ) do |m|
+  puts "Modified javascript file: #{m[0]}"
+  compile
+end
+
 watch( 'content/assets/style/(.*)' ) do |m|
   puts "Modified asset file: #{m[0]}"
   compile
 end
 
-watch( 'layouts/(.*)' ) do |m|
+watch( '/content/layouts/(.*)' ) do |m|
   puts "Modified layout: #{m[0]}"
   compile
 end
 
-watch( 'layouts/common/(.*)' ) do |m|
+watch( 'content/layouts/common/(.*)' ) do |m|
   puts "Modified common file: #{m[0]}"
   compile
 end

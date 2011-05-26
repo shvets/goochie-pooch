@@ -5,11 +5,12 @@ task :clean do
 end
 
 task :compile do
+  `nanoc3 compile`
+
   `mkdir -p public/css`
 
   `cp -R static/imageflow/imageflow.js public/javascripts`
   `cp -R static/imageflow/imageflow.css public/css`
-  `nanoc3 compile`
 end
 
 task :view do

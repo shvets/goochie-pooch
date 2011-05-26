@@ -21,11 +21,6 @@ compile '/images/*/' do
   # don’t filter images
 end
 
-compile '/imageflow/*/' do
-  p ""
-  # don’t filter images
-end
-
 compile '/stylesheet/*' do
   # don’t filter or layout
 end
@@ -62,16 +57,6 @@ end
 
 # routes
 
-route '/imageflow/*' do
-  if item[:extension] == 'css'
-    "/stylesheets/#{File.basename(item[:filename])}"
-  elsif item[:extension] == 'js'
-    "/javascripts/#{File.basename(item[:filename])}"
-  elsif item[:extension] == 'png'
-    "/" + item[:filename].sub('content/', '')
-  end
-end
-
 route '/images/*/' do
   item.identifier.chop + '.' + item[:extension]
 end
@@ -84,20 +69,20 @@ route '/assets/style/*/' do
   item.identifier.chop + '.css' # so that the /assets/style/screen/ item is compiled to /assets/style/screen.css
 end
 
+# so that the /assets/coffee/ item is copied to /javascripts/ item
 route '/assets/coffee/*/' do
-  #item.identifier.chop + '.js' # so that the /assets/style/screen/ item is compiled to /assets/style/screen.css
-  "/javascripts/#{File.basename(item[:filename])}".sub('coffee', 'js')
+  item.identifier.sub(%r{^/assets/coffee}, '/javascripts').chop + '.js'
 end
 
+# so that the /assets/javascript/ item is copied to /javascripts/ item
 route '/assets/javascript/*/' do
-  #item.identifier.chop + '.js'
-  "/javascripts/#{File.basename(item[:filename])}"
+  #item.identifier.sub(%r{^/assets/javascript}, '/javascripts').chop + '.js'
+  item[:filename].sub(%r{^content/assets/javascript}, '/javascripts')
 end
 
 route '*' do
   item.identifier + 'index.html'
 end
-
 
 # layouts
 

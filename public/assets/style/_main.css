@@ -21,21 +21,16 @@ a
 
 #wrapper
   margin: 0 auto
-  width: 900px
-
-/* main column, as opposed to sidebar
+  width: 1200px
+  clear: both
 
 #main-column
-//  width: 700px
   float: left
-
-#slideshow
-  border: 1px
 
 #sidebar
-  width: 170px
-  margin: 135px 0 0 30px
-  float: left
+  width: 250px
+  margin: 55px 50px 0 0px
+  float: right
   font: 13px Helvetica
   color: #5F5D5F
   p
@@ -55,6 +50,9 @@ a
     background-color: #FEEFDB
     margin: 0 0 20px
     padding: 20px
+
+#slideshow
+  border: 1px
 
 #logo
   height: 130px
