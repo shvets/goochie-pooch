@@ -1,0 +1,121 @@
+﻿@charset "utf-8";
+
+/* ImageFlow Settings - CSS 2.1
+==================================== */
+.image-slider { width:1020px; height:200px; overflow:hidden;  margin-left:-20px; padding-top:-5px; padding-bottom: 7px;}
+
+@media screen, projection {
+	.imageflow {
+		/* overflow:hidden; */
+		position:relative;
+		text-align:left;
+		top:0px;
+		visibility:hidden;
+		border:none;
+		background:none;
+}
+	.imageflow img {
+		border:none;
+		position:absolute;
+		top:0px;
+		visibility:hidden;
+		-ms-interpolation-mode:bicubic;/* Enables bicubic image resampling for the IE7 */
+		width:300px;
+		height:240px;
+		-moz-box-shadow: 3px 3px 4px #3e4c59;
+	-webkit-box-shadow: 3px 3px 4px #3e4c59;
+	box-shadow: 3px 3px 4px #3e4c59;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3e4c59')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3e4c59');
+
+	 /* border:#fff 3px solid; */
+	}
+	.imageflow p {
+		margin:0 auto;
+		text-align:center;
+	}
+	.imageflow .loading {
+		border:1px solid white;
+		height:4px;
+		left:50%;
+		margin-left:-106px;
+		padding:0;
+		position:relative;
+		visibility:visible;
+		width:200px;
+	}
+	.imageflow .loading_bar {
+		background:#fff;
+		height:4px;
+		visibility:visible;
+		width:1%;
+	}
+	.imageflow .navigation{
+		z-index:10000;
+	}
+/*	.imageflow .caption {
+		font-weight:bold;
+		position:relative;
+		text-align:center;
+		z-index:10001;
+	} */
+	.imageflow .scrollbar {
+	/*	border-bottom:1px solid #b3b3b3; */
+		position:relative;
+		visibility:hidden;
+		z-index:10002;
+		height:1px;
+	}
+	.imageflow .slider {
+	  /*  background-image:url(slider.png);
+		background-repeat:no-repeat;
+		height:14px;
+		margin:-6px 0 0 -7px; */
+		position:absolute;
+		width:14px;
+		z-index:10003;
+		visibility:hidden;
+	}
+	.imageflow .images {
+		overflow:hidden;
+		white-space:nowrap;
+		border:none;
+	}
+	.imageflow .button {
+		cursor:pointer;
+		height:17px;
+		position:relative;
+		width:17px;
+	}
+	.imageflow .previous {
+		background: url(../images/imageSlider-button_left.gif) top left no-repeat;
+		float:left;
+		margin: -107px 0 0 -190px;
+		width:87px;
+		height:80px;
+	}
+	.imageflow .next {
+		background: url(../images/imageSlider-button_right.gif) top left no-repeat;
+		float:right;
+		top:-107px;
+		right:-220px;
+		width:87px;
+		height:80px;
+	}
+	.imageflow .slideshow {
+		cursor:pointer;
+		height:48px;
+		margin:15px 0 0 875px;
+		position:absolute;
+		width:48px;
+		z-index:10003;
+	}
+	.imageflow .slideshow.pause {
+		background:url(../images/pause.gif) no-repeat;
+	}
+	.imageflow .slideshow.play {
+		background:url(../images/play.gif) no-repeat;
+	}
+}
