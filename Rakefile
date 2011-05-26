@@ -11,6 +11,8 @@ task :compile do
 
   `cp -R static/imageflow/imageflow.js public/javascripts`
   `cp -R static/imageflow/imageflow.css public/css`
+  `cp -R static/imageflow/img public/images/img`
+  `cp -R static/imageflow/*.png public/images`
 end
 
 task :view do
