@@ -40,5 +40,5 @@ end
 
 task :migrate do
   #heroku create --stack bamboo-mri-1.9.2
-  `heroku stack:migrate bamboo-mri-1.9.2`
+  puts `heroku stack:migrate bamboo-mri-1.9.2`
 end
