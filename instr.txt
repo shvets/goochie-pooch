@@ -1,0 +1,12 @@
+heroku keys:add
+
+heroku destroy goochie-pooch
+heroku create goochie-pooch
+heroku domains:add www.goochie-pooch.com
+heroku domains:add goochie-pooch.com
+
+git remote -v
+
+heroku apps
+
+heroku git:remote -a goochie-pooch

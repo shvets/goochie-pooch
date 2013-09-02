@@ -1,0 +1,40 @@
+%br
+%br
+
+- require 'image_size'
+
+.image-slider
+  #photos_gallery.imageflow
+    - Dir.new('source/assets/images/slideshow').each do |file_name|
+      - if file_name =~/.jpg/i
+        - image_size = imagesize "source/assets/images/slideshow/#{file_name}"
+        %img{:width => "#{image_size[0]/3}", :height => "#{image_size[1]/3}", :longdesc => "/assets/images/slideshow/#{file_name}", :src => "/assets/images/slideshow/#{file_name}"}
+
+:javascript
+  jQuery(document).ready(function() {
+    //var slideshow = new ImageFlow();
+    //slideshow.init({ ImageFlowID: 'myImageFlow', slideshow: true, slideshowAutoplay: true });
+
+    var slideshow = new ImageFlow();
+    slideshow.init({
+      animationSpeed:     40,
+      aspectRatio:        5.0,
+      buttons:            true,
+      captions:           false,
+      circular:           true,
+      imageCursor:        'pointer',
+      ImageFlowID:        'photos_gallery',
+      imageFocusM:        0.5,
+      imageFocusMax:      2,
+      imagesHeight:       0.7,
+      percentLandscape:   100.4,
+      reflections:        false,
+      reflectionP:        0.4,
+      slideshow:          true,
+      slideshowSpeed:     7000,
+      slideshowAutoplay:  true,
+      glideToStartID:     false,
+      startAnimation:     true,
+      xStep:              120
+    });
+  });

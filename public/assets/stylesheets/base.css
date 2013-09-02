@@ -1,0 +1,192 @@
+/* general */
+/* line 3, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+body {
+  padding: 0;
+  font-family: "Droid Serif", Georgia, Serif;
+  line-height: 1.5;
+  color: #3f3f3f;
+  background-color: lavender;
+  font-size: 14px; }
+
+/* line 11, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+a {
+  color: black;
+  /*  text-decoration: none; */ }
+  /* line 14, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  a:hover {
+    color: black;
+    text-decoration: underline; }
+  /* line 17, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  a img {
+    border: 0 none; }
+
+/* whole page */
+/* line 22, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  clear: both; }
+
+/* line 27, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#main-column {
+  float: left; }
+
+/* line 30, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#sidebar {
+  width: 250px;
+  margin: 55px 50px 0 0px;
+  float: right;
+  font: 13px Helvetica;
+  color: #5f5d5f; }
+  /* line 36, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #sidebar p {
+    margin: 0 0 5px; }
+  /* line 38, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #sidebar h2 {
+    margin-top: 17px;
+    border-bottom: 1px dotted #aaaaaa; }
+  /* line 41, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.2em; }
+  /* line 46, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #sidebar h1, #sidebar h2 {
+    font: bold 14px Helvetica;
+    color: black; }
+  /* line 49, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #sidebar .section {
+    background-color: #feefdb;
+    margin: 0 0 20px;
+    padding: 20px; }
+
+/* line 54, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#slideshow {
+  border: 1px; }
+
+/* line 57, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#logo {
+  height: 130px;
+  margin: 0 auto; }
+  /* line 60, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #logo h1 {
+    float: left;
+    margin: 0;
+    padding: 10px 0 0 0px;
+    line-height: normal; }
+  /* line 65, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #logo h2 {
+    float: left;
+    margin: 0;
+    padding: 10px 0 0 0px;
+    line-height: normal;
+    float: right;
+    padding: 68px 0 0 18px;
+    font: 18px Helvetica;
+    color: #5f5d5f; }
+    /* line 74, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+    #logo h2 span {
+      color: #b32d15; }
+
+/* line 77, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#main_content {
+  clear: both; }
+
+/* line 80, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#menu {
+  float: left;
+  color: #5f5d5f; }
+  /* line 83, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 2; }
+  /* line 88, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #menu li {
+    display: block; }
+  /* line 90, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #menu a {
+    display: block;
+    margin-right: 3px;
+    text-decoration: none;
+    font-family: "Graublau Web", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: orange; }
+    /* line 97, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+    #menu a:hover {
+      color: #b32d15;
+      text-decoration: underline; }
+  /* line 100, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #menu .current_page_item a {
+    color: #b32d15; }
+
+/* line 103, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#page {
+  /* border: 1px dotted */
+  width: 650px;
+  float: right;
+  font: 13px Helvetica;
+  color: #5f5d5f;
+  line-height: 1.4em;
+  text-align: justify;
+  letter-spacing: 0.03em; }
+  /* line 112, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #page h1, #page h2 {
+    font: bold Helvetica;
+    color: black; }
+  /* line 115, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #page h1 {
+    margin: 20px 0 30px;
+    font-size: 40px;
+    font-family: "Reenie Beanie", arial, serif;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #aaaaaa;
+    font-variant: small-caps;
+    text-transform: lowercase; }
+  /* line 123, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #page h2 {
+    font-size: 14px; }
+  /* line 125, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #page p {
+    font-family: "Cantarell", arial, serif; }
+
+/* line 128, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#footer {
+  margin-top: 30px; }
+  /* line 130, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #footer p {
+    font: 11px Helvetica;
+    color: #aaaaaa;
+    text-align: center; }
+
+/* line 135, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#legal {
+  clear: both;
+  padding-top: 17px;
+  text-align: left; }
+  /* line 139, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+  #legal a {
+    font-weight: normal;
+    color: #5f5d5f; }
+
+/* misc */
+/* line 145, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#lang-selector {
+  margin-bottom: 20px; }
+
+/* line 148, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#address {
+  font: 16px Helvetica;
+  color: black; }
+
+/* line 152, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#plain_text {
+  font: 16px Helvetica;
+  color: black; }
+
+/* line 156, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+#big_phone_number {
+  font: bold Helvetica;
+  color: black; }

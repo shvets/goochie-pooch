@@ -1,26 +1,16 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
-gem "rack"
-gem "rack-contrib"
-gem "rack-rewrite"
+ruby "1.9.3"
 
-group "development" do
-  gem "irbtools"
-  gem "adsf"
-  gem "watchr"
-  gem "heroku"
-
-  gem 'compass'
-  gem "nanoc3"
+group "default" do
+  gem "middleman"
+  gem "middleman-livereload"
+  gem "redcarpet"
   gem "haml"
-  gem "kramdown"
 
-  gem "mime-types"
+  gem "middleman-syntax"
+
   gem "imagesize"
-  gem 'coffee-script'
-  gem 'coffee-filter'
-end
 
-group "test" do
-  gem "rspec"
+  gem "rack-rewrite"
 end
