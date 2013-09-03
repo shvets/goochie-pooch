@@ -1,0 +1,27 @@
+/* line 1, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/print.sass */
+#sidebar {
+  display: none; }
+
+/* line 4, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/print.sass */
+#menu {
+  display: none; }
+
+/* line 7, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/print.sass */
+#logo {
+  display: none; }
+
+/* line 10, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/print.sass */
+#legal {
+  display: none; }
+
+/* line 13, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/print.sass */
+.section.coupon {
+  display: block; }
+
+/* line 16, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/print.sass */
+.coupon {
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  border: 3px dashed #cccccc;
+  font: 16px Helvetica; }

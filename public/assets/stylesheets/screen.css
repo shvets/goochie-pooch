@@ -193,3 +193,11 @@ a {
 #big_phone_number {
   font: bold Helvetica;
   color: black; }
+
+/* line 160, /Users/alex/Dropbox/Alex/work/projects/goochie-pooch/source/assets/stylesheets/base.sass */
+.coupon {
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  border: 3px dashed #cccccc;
+  font: 16px Helvetica; }
