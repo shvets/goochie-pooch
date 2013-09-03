@@ -21,6 +21,8 @@ configure :build do
   activate :syntax, :line_numbers => true
 end
 
+page "/coupon.html", :layout => "printable"
+
 helpers do
   def menu_style value
     #{:class => @item[:menu] == value ? "current_page_item" : ""}
