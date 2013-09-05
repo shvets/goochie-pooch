@@ -12,11 +12,13 @@
 
     = stylesheet_link_tag "screen"
 
+    = javascript_include_tag "requirejs-2.1.8.min"
     = javascript_include_tag "jquery-1.10.2.min"
     = javascript_include_tag "jquery.jcarousel.min"
     = javascript_include_tag "gp-jcarousel"
-
     = javascript_include_tag  "application"
+
+    -#%script{"data-main" => "javascripts/application.js", :src => "javascripts/requirejs-2.1.8.min.js"}
   %body
     #wrapper
       #main-column
