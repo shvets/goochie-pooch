@@ -1,7 +1,7 @@
 /** Stage container **/
 
 .connected-carousels .stage {
-    width: 720px;
+    width: 660px;
     margin: 20px auto;
     position: relative;
 }
@@ -23,8 +23,8 @@
 /** Navigation container **/
 
 .connected-carousels .navigation {
-    width: 260px;
-    margin: 20px auto;
+    /*width: 260px;*/
+    /*margin: 20px auto;*/
     position: relative;
 }
 
@@ -64,7 +64,7 @@
 
 .connected-carousels .carousel-navigation {
     height: 60px;
-    width: 240px;
+    /*width: 540px;*/
     background: #fff;
     border: 10px solid #fff;
     -webkit-border-radius: 5px;
