@@ -1,0 +1,188 @@
+/** Stage container **/
+
+
+.jcarousel .stage {
+    width: 660px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.jcarousel .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.jcarousel .photo-credits a {
+    color: #fff;
+}
+
+/** Navigation container **/
+
+.jcarousel .navigation {
+    /*width: 260px;*/
+    /*margin: 20px auto;*/
+    position: relative;
+}
+
+/** Shared carousel styles **/
+
+.jcarousel .carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel .carousel ul {
+    width: 20000em;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel .carousel li {
+    float: left;
+}
+
+/** Stage carousel specific styles **/
+
+.jcarousel .carousel-stage {
+    height: 400px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+/** Navigation carousel specific styles **/
+
+.jcarousel .carousel-navigation {
+    height: 60px;
+    /*width: 540px;*/
+    background: #fff;
+    border: 2px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.jcarousel .carousel-navigation li {
+    cursor: pointer;
+}
+
+.jcarousel .carousel-navigation li img {
+    display: block;
+    border: 2px solid #fff;
+}
+
+.jcarousel .carousel-navigation li.active img {
+    border-color: #ccc;
+}
+
+/** Stage carousel controls **/
+
+.jcarousel .prev-stage,
+.jcarousel .next-stage {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 305px;
+    height: 410px;
+    color: #fff;
+}
+
+.jcarousel .prev-stage {
+    left: 0;
+}
+
+.jcarousel .next-stage {
+    right: 0;
+}
+
+.jcarousel .prev-stage.inactive,
+.jcarousel .next-stage.inactive {
+    display: none;
+}
+
+.jcarousel .prev-stage span,
+.jcarousel .next-stage span {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.jcarousel .prev-stage span {
+    left: 20px;
+}
+
+.jcarousel .next-stage span {
+    right: 20px;
+}
+
+.jcarousel .prev-stage:hover span,
+.jcarousel .next-stage:hover span {
+    display: block;
+}
+
+/** Navigation carousel controls **/
+
+.jcarousel .prev-navigation,
+.jcarousel .next-navigation {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 16px/29px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.jcarousel .prev-navigation {
+    left: -15px;
+    top: 22px;
+    text-indent: 6px;
+}
+
+.jcarousel .next-navigation {
+    right: -15px;
+    top: 22px;
+    text-indent: 20px;
+}
+
+.jcarousel .prev-navigation.inactive,
+.jcarousel .next-navigation.inactive {
+    opacity: .5;
+    cursor: default;
+}
