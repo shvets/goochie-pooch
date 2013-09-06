@@ -1,4 +1,5 @@
-define('GPJCarousel', function() {
+module.exports.GPJCarousel = function() {
+//define('GPJCarousel', function() {
   // This is the connector function.
   // It connects one item from the navigation carousel to one item from the
   // stage carousel.
@@ -83,5 +84,5 @@ define('GPJCarousel', function() {
           });
     }
   };
-});
-
+//});
+};

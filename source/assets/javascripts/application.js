@@ -1,8 +1,3 @@
-//require(['GPJCarousel'], function(carousel) {
-//  carousel.display();
-//});
-
-
 require.config({
   //By default load any module IDs from js/lib
   baseUrl: 'assets/javascripts',
